@@ -6,7 +6,7 @@ Pod::Spec.new do |spec|
     spec.license                = { :type => "MIT", :file => "LICENSE" }
     spec.author                 = { "SilenceLove" => "294005139@qq.com" }
     spec.swift_versions         = ['5.0']
-    spec.ios.deployment_target  = "12.0"
+    spec.ios.deployment_target  = "11.0"
     spec.source                 = { :git => "https://github.com/SilenceLove/HXPHPicker.git", :tag => "#{spec.version}" }
     spec.framework              = 'UIKit','Photos','PhotosUI'
     spec.requires_arc           = true
@@ -26,7 +26,7 @@ Pod::Spec.new do |spec|
         end
         picker.subspec 'KF' do |kf|
             kf.dependency 'HXPHPicker/Picker/Lite'
-            kf.dependency 'Kingfisher', '~> 7.0'
+            kf.dependency 'Kingfisher'
         end
     end
   
@@ -38,7 +38,7 @@ Pod::Spec.new do |spec|
         end
         editor.subspec 'KF' do |kf|
             kf.dependency 'HXPHPicker/Editor/Lite'
-            kf.dependency 'Kingfisher', '~> 7.0'
+            kf.dependency 'Kingfisher'
         end
     end
     
